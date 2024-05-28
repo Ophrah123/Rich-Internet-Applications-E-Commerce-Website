@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <%-  include('../partials/head'); %>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <%-  include('../partials/secure_header',{user:user}); %>
+            </header>
+            <main>
+                <div class="jumbotron">
+                    <h1>
+                      SECURE RESOURCE
+                    </h1>
+                    <p>
+                        Templating in fun!
+                    </p>
+
+
+                </div>
+                <div class="container">
+                <div class="row row-cols-3 row-cols-md-3 g-4">
+                        <% if (data.length>0){%>
+                        <% data.forEach((p)=>{ %>
+                          <div class="col">
+                             <div class="card">
+                                <img src="<%=p.imgs[0]%>" class="card-img-top" alt="<%=p.title%>">
+                                <div class="card-body">
+                                  <h5 class="card-title"><%=p.title%></h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-muted">Price: $<%=p.price%></small></p>
+                                    <select name="size">
+                                        <% p.size.forEach((s)=>{ %>
+                                            <option name="<%=s%>"><%=s%></option>
+                                        <% }); %>
+                                    </select>
+                                    <button class="btn btn-primary" type="button" data-id="">Add</button>
+                                </div>
+                              </div>
+                        <% }); %>
+                        </div>
+                    <%}%>
+
+                    </div>
+                </div>
+
+            </main>
+            <footer>
+                <%- include('../partials/footer'); %>
+            </footer>
+
+
+        </div>
+    </body>
+
+</html>

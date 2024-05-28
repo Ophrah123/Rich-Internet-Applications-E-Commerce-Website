@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1216239c7d.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <section id="header">
+        <a href ="#"><img src="img/logo1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="login.html">Login/SignUp</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+          <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+      </div>
+      
+      
+      <div id="products">
+        <h2>Products</h2>
+        <section id="cartdetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="https://cottoncravings.com/wp-content/uploads/2014/07/peppermint-cottoncandy.jpg" width="100%" id="MainImg"alt="">
+            </div>
+            <div class="single-pro-details">
+                <h4>Peppermint Cotton Candy</h4>
+                <h4>$10</h4>
+        <button onclick="addToCart('Peppermint', 10)">Add to Cart</button>
+        <div class="single-pro-image">
+            <img src="https://wockenfusscandies.com/wp-content/uploads/2020/11/fruit-slice-sm.jpg" width="100%" id="MainImg"alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Fruit Candy</h4>
+            <h4>$5</h4>
+        <button onclick="addToCart('Fruit Candy', 5)">Add to Cart</button>
+        <div class="single-pro-image">
+            <img src="https://www.halfnuts.net/cdn/shop/products/1275_1024x.jpg?v=1547508241" width="100%" id="MainImg"alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Taffy</h4>
+            <h4>$3.55</h4>
+        <button onclick="addToCart('Taffy', 3.55)">Add to Cart</button>
+        <div class="single-pro-image">
+            <img src="https://cdnimg.webstaurantstore.com/images/products/large/36949/1877983.jpg" width="100%" id="MainImg"alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Cotton Candy</h4>
+            <h4>$15</h4>
+        <button onclick="addToCart('Cotton Candy', 15)">Add to Cart</button>
+        <div class="single-pro-image">
+            <img src="https://www.candyfavorites.com/media/catalog/product/cache/4226787a49a240193bc173af0a49120d/r/e/red-licorice-twists.webp" width="100%" id="MainImg"alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Licorice</h4>
+            <h4>$7.50</h4>
+        <button onclick="addToCart('Licorice', 7.50)">Add to Cart</button>
+        <div class="single-pro-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Green_and_Black%27s_dark_chocolate_bar_2.jpg" width="100%" id="MainImg"alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Chocolate</h4>
+            <h4>$5</h4>
+        <button onclick="addToCart('Chocolate', 5)">Add to Cart</button>
+        <div class="single-pro-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Candy-Corn.jpg/1200px-Candy-Corn.jpg" width="100%" id="MainImg"alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Candy Corn</h4>
+            <h4>$4</h4>
+        <button onclick="addToCart('Candy Corn', 4)">Add to Cart</button>
+        <div class="single-pro-image">
+            <img src="https://www.lorentanuts.com/wp-content/uploads/2021/02/12-flavor-gummy-bears-perspective-www.lorentanuts.com_.jpg" width="100%" id="MainImg"alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Gummies</h4>
+            <h4>$6</h4>
+        <button onclick="addToCart('Gummies', 6)">Add to Cart</button>
+        <div class="single-pro-image">
+            <img src="https://amandascookin.com/wp-content/uploads/2021/12/homemade-lollipops-RC-SQ-480x270.jpg" width="100%" id="MainImg"alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Lollipops</h4>
+            <h4>$5</h4>
+        <button onclick="addToCart('Lollipops', 5)">Add to Cart</button>
+        <div class="single-pro-image">
+            <img src="https://www.arcadesnacks.com/wp-content/uploads/caramel-creams.png" width="100%" id="MainImg"alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Caramels</h4>
+            <h4>$10</h4>
+        <button onclick="addToCart('Caramel', 10)">Add to Cart</button>
+      </div>
+      <script>
+        let cart = [];
+        
+        function addToCart(itemName, itemPrice) {
+          cart.push({ name: itemName, price: itemPrice });
+          updateCart();
+        }
+        
+        function removeFromCart(index) {
+          cart.splice(index, 1);
+          updateCart();
+        }
+        
+        function updateCart() {
+          let cartItems = document.getElementById('cart-items');
+          let total = 0;
+          cartItems.innerHTML = '';
+          cart.forEach((item, index) => {
+            total += item.price;
+            cartItems.innerHTML += `<li>${item.name} - $${item.price} <button onclick="removeFromCart(${index})">Remove</button></li>`;
+          });
+          document.getElementById('total').innerText = total.toFixed(2);
+        }
+        
+        function checkout() {
+          // Implement checkout logic (e.g., send cart data to server)
+          alert('Checkout complete!');
+          cart = [];
+          updateCart();
+        }
+      </script>
+      
+      </body>
+      </html>
+    </body>
+    </html>

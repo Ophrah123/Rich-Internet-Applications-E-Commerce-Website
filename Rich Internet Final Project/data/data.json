@@ -1,0 +1,124 @@
+[
+    {
+        "title": "Peppermint",
+        "price": 10,
+        "imgs":[
+            "https://cottoncravings.com/wp-content/uploads/2014/07/peppermint-cottoncandy.jpg",
+            "https://cottoncravings.com/wp-content/uploads/2014/07/peppermint-cottoncandy.jpg",
+            "https://cottoncravings.com/wp-content/uploads/2014/07/peppermint-cottoncandy.jpg",
+            "https://cottoncravings.com/wp-content/uploads/2014/07/peppermint-cottoncandy.jpg"
+        ],
+        "size":[
+            "S", "M","L","XL"
+        ]
+    },
+    {
+        "title": "Fruit Candy",
+        "price": 5,
+        "imgs":[
+            "https://wockenfusscandies.com/wp-content/uploads/2020/11/fruit-slice-sm.jpg",
+            "https://wockenfusscandies.com/wp-content/uploads/2020/11/fruit-slice-sm.jpg",
+            "https://wockenfusscandies.com/wp-content/uploads/2020/11/fruit-slice-sm.jpg",
+            "https://wockenfusscandies.com/wp-content/uploads/2020/11/fruit-slice-sm.jpg"
+        ],
+        "size":[
+            "S", "M","L","XL"
+        ]
+    },
+    {
+        "title": "Taffy",
+        "price": 3.55,
+        "imgs":[
+            "https://www.halfnuts.net/cdn/shop/products/1275_1024x.jpg?v=1547508241",
+            "https://www.halfnuts.net/cdn/shop/products/1275_1024x.jpg?v=1547508241",
+            "https://www.halfnuts.net/cdn/shop/products/1275_1024x.jpg?v=1547508241"
+        ],
+        "size":[
+            "XS","S", "M","L","XL"
+        ]
+    },
+    {
+        "title": "Cotton Candy",
+        "price": 15,
+        "imgs":[
+            "https://cdnimg.webstaurantstore.com/images/products/large/36949/1877983.jpg",
+            "https://cdnimg.webstaurantstore.com/images/products/large/36949/1877983.jpg",
+            "https://cdnimg.webstaurantstore.com/images/products/large/36949/1877983.jpg"
+        ],
+        "size":[
+            "XS","S", "M","L","XL"
+        ]
+    },
+    {
+        "title": "Licorice",
+        "price": 7.50,
+        "imgs":[
+            "https://www.candyfavorites.com/media/catalog/product/cache/4226787a49a240193bc173af0a49120d/r/e/red-licorice-twists.webp",
+            "https://www.candyfavorites.com/media/catalog/product/cache/4226787a49a240193bc173af0a49120d/r/e/red-licorice-twists.webp",
+            "https://www.candyfavorites.com/media/catalog/product/cache/4226787a49a240193bc173af0a49120d/r/e/red-licorice-twists.webp"
+        ],
+        "size":[
+            "XS","S", "M","L","XL"
+        ]
+    },
+    {
+        "title": "Chocolate",
+        "price": 5,
+        "imgs":[
+            "https://upload.wikimedia.org/wikipedia/commons/c/cd/Green_and_Black%27s_dark_chocolate_bar_2.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/c/cd/Green_and_Black%27s_dark_chocolate_bar_2.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/c/cd/Green_and_Black%27s_dark_chocolate_bar_2.jpg"
+        ],
+        "size":[
+            "XS","S", "M","L","XL"
+        ]
+    },
+    {
+        "title": "Candy Corn",
+        "price": 4,
+        "imgs":[
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Candy-Corn.jpg/1200px-Candy-Corn.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Candy-Corn.jpg/1200px-Candy-Corn.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Candy-Corn.jpg/1200px-Candy-Corn.jpg"
+        ],
+        "size":[
+            "XS","S", "M","L","XL"
+        ]
+    },
+    {
+        "title": "Gummies",
+        "price": 6,
+        "imgs":[
+            "https://www.lorentanuts.com/wp-content/uploads/2021/02/12-flavor-gummy-bears-perspective-www.lorentanuts.com_.jpg",
+            "https://www.lorentanuts.com/wp-content/uploads/2021/02/12-flavor-gummy-bears-perspective-www.lorentanuts.com_.jpg",
+            "https://www.lorentanuts.com/wp-content/uploads/2021/02/12-flavor-gummy-bears-perspective-www.lorentanuts.com_.jpg"
+        ],
+        "size":[
+            "XS","S", "M","L","XL"
+        ]
+    },
+    {
+        "title": "Lollipops",
+        "price": 5,
+        "imgs":[
+            "https://amandascookin.com/wp-content/uploads/2021/12/homemade-lollipops-RC-SQ-480x270.jpg",
+            "https://amandascookin.com/wp-content/uploads/2021/12/homemade-lollipops-RC-SQ-480x270.jpg",
+            "https://amandascookin.com/wp-content/uploads/2021/12/homemade-lollipops-RC-SQ-480x270.jpg"
+        ],
+        "size":[
+            "XS","S", "M","L","XL"
+        ]
+    },
+    {
+        "title": "Caramels",
+        "price": 10,
+        "imgs":[
+            "https://www.arcadesnacks.com/wp-content/uploads/caramel-creams.png",
+            "https://www.arcadesnacks.com/wp-content/uploads/caramel-creams.png",
+            "https://www.arcadesnacks.com/wp-content/uploads/caramel-creams.png"
+        ],
+        "size":[
+            "XS","S", "M","L","XL"
+        ]
+    }
+]
